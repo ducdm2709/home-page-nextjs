@@ -1,6 +1,17 @@
 .introduceTitle {
-    color: #003f7f;
+    color: #04509b;
+    position: relative;
+    &::after {
+        content: "";
+        left: 116px;
+        width: 5%;
+        height: 1px;
+        top: 12px;
+        position: absolute;
+        background-color: #04509b;
+    }
     .introduceContent {
-        color: #007fff;
+        margin-left: 21px;
+        color: #09b0e8;
     }
 }

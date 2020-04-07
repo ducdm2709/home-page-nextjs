@@ -1,5 +1,20 @@
 .line {
-    border-left: 2px solid #aacbed;
+    padding-left: 15px;
+    border-left: 3px solid #ceefef;
 }
 @media screen and(max-width: 768px) {
+    .line {
+        border: 0;
+    }
+    .navbarCollapse {
+        position: absolute;
+        width: 200px;
+        right: -17px;
+        top: 53px;
+        background-color: #e5e5e5;
+        z-index: 100;
+        .navItem:hover {
+            background-color: #918c8c;
+        }
+    }
 }

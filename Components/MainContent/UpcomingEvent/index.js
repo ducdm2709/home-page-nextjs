@@ -39,28 +39,28 @@ const renderEvent = () => {
   return listEvent.map((event, index) => {
     return (
       <div className="col-lg-3 col-sm-6  mb-5" key={index}>
-        <h6>{event.title}</h6>
-        <p>CTI Coach Training Session</p>
-        <h6>{event.dateTime}</h6>
-        <div>
-          <p>9:00 AM - 5:00 PM</p>
-          <div>{"<Location Name>"}</div>
-          <div>{"<Location Address>"}</div>
+        <div className="mb-4">
+          <h6>{event.title}</h6>
+          <p>CTI Coach Training Session</p>
+          <h6>{event.dateTime}</h6>
+          <div>
+            <div>9:00 AM - 5:00 PM</div>
+            <div>{"<Location Name>"}</div>
+            <div>{"<Location Address>"}</div>
+          </div>
+          <h6>
+            Description:{" "}
+            <span className={styles.textConent}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </span>
+          </h6>
+          <h6>
+            Fee: <span className={styles.textConent}>$375.00 per person</span>
+          </h6>
         </div>
-        <h6>
-          Description:{" "}
-          <span className={styles.textConent}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </span>
-        </h6>
-
-        <h6>
-          Fee: <span className={styles.textConent}>$375.00 per person</span>
-        </h6>
-
         <button
           type="button"
           className={`btn btn-outline-primary ${styles.button}`}
@@ -75,7 +75,7 @@ const UpcomingEvent = () => {
   return (
     <Fragment>
       <div>
-        <h2 className="title">Upcoming Event</h2>
+        <h4 className="mb-5">Upcoming Training Event</h4>
       </div>
       <div className="row">{renderEvent()}</div>
     </Fragment>

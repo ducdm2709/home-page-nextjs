@@ -2,7 +2,19 @@
     display: flex;
     justify-content: space-between;
     .title {
-        width: 30%;
+        color: #09b0e8;
+        line-height: 18px;
+        width: 35%;
+        margin-top: 17px;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .link {
+        text-decoration: none;
+        &:hover {
+            color: unset;
+        }
     }
 }
 @media screen and (max-width: 992px) {
