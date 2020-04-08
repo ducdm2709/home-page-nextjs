@@ -38,7 +38,7 @@ const listEvent = [
 const renderEvent = () => {
   return listEvent.map((event, index) => {
     return (
-      <div className="col-lg-3 col-sm-6  mb-5" key={index}>
+      <div className="col-lg-3 col-sm-6 mb-5" key={index}>
         <div className="mb-4">
           <h6>{event.title}</h6>
           <p>CTI Coach Training Session</p>
@@ -50,7 +50,7 @@ const renderEvent = () => {
           </div>
           <h6>
             Description:{" "}
-            <span className={styles.textConent}>
+            <span className="font-weight-normal">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -58,12 +58,12 @@ const renderEvent = () => {
             </span>
           </h6>
           <h6>
-            Fee: <span className={styles.textConent}>$375.00 per person</span>
+            Fee: <span className="font-weight-normal">$375.00 per person</span>
           </h6>
         </div>
         <button
           type="button"
-          className={`btn btn-outline-primary ${styles.button}`}
+          className={`btn btn-outline-primary w-100 ${styles.button}`}
         >
           Get More Information
         </button>

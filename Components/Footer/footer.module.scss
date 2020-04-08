@@ -1,15 +1,6 @@
 .footer {
     background-color: #14aaf9;
     color: white;
-    height: 100px;
-    .logoFooter {
-        margin-top: 25px;
-    }
-    .footerText {
-        text-align: right;
-        width: 100%;
-        margin-top: 60px;
-    }
 }
 @media screen and (max-width: 768px) {
     .footer {
@@ -17,8 +8,8 @@
             display: none;
         }
         .footerText {
-            margin-top: 40px;
-            text-align: center;
+            padding-bottom: 20px !important;
+            text-align: center !important;
         }
     }
 }
