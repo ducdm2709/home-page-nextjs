@@ -75,7 +75,7 @@ const UpcomingEvent = () => {
   return (
     <Fragment>
       <div>
-        <h4 className="mb-5">Upcoming Training Event</h4>
+        <h4 className="my-5 font-weight-normal">Upcoming Training Event</h4>
       </div>
       <div className="row">{renderEvent()}</div>
     </Fragment>

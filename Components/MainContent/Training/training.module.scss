@@ -12,6 +12,13 @@
     }
     .introduceContent {
         margin-left: 21px;
-        color: #09b0e8;
+        color: #14aaf9;
+    }
+}
+@media screen and (max-width: 768px) {
+    .introduceTitle {
+        &::after {
+            width: 2%;
+        }
     }
 }

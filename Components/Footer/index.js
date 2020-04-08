@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="root d-flex justify-content-between">
         <img
           className={`logo__img ${styles.logoFooter}`}
-          src="/logo.png"
+          src="/logo-white.png"
           alt="logo"
         />
         <div className={styles.footerText}>

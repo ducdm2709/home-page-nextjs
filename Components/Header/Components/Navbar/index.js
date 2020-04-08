@@ -10,9 +10,16 @@ const Navbar = () => {
   ];
   const renderNavbar = () => {
     return listLink.map((link, index) => {
+      if (link === "Sign In") {
+        <li className={`nav-item  ${styles.line} ${styles.navItem}`}>
+          <a className={`nav-link ${styles.navLink}`} href="#">
+            Sign In
+          </a>
+        </li>;
+      }
       return (
-        <li className="nav-item mx-3" key={index}>
-          <a className="nav-link" href="#">
+        <li className={`nav-item mx-3 ${styles.navItem}`} key={index}>
+          <a className={`nav-link ${styles.navLink}`} href="#">
             {link}
           </a>
         </li>
@@ -33,14 +40,7 @@ const Navbar = () => {
         className={`collapse navbar-collapse ${styles.navbarCollapse}`}
         id="collapsibleNavbar"
       >
-        <ul className=" navbar-nav">
-          {renderNavbar()}
-          <li className={`nav-item ${styles.line}`}>
-            <a className="nav-link" href="#">
-              Sign In
-            </a>
-          </li>
-        </ul>
+        <ul className=" navbar-nav">{renderNavbar()}</ul>
       </div>
     </nav>
   );

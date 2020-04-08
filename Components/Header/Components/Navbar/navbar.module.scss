@@ -8,13 +8,21 @@
     }
     .navbarCollapse {
         position: absolute;
-        width: 200px;
+        width: 160px;
         right: -17px;
         top: 53px;
-        background-color: #e5e5e5;
+        background-color: #09b0e8;
         z-index: 100;
-        .navItem:hover {
-            background-color: #918c8c;
+        .navItem {
+            margin: 0 !important;
+            &:hover {
+                background-color: #0594c4;
+            }
+        }
+
+        .navLink {
+            text-align: center;
+            color: white;
         }
     }
 }
