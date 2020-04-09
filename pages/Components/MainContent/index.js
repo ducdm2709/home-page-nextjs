@@ -1,13 +1,12 @@
 import Training from "./Training";
 import UpcomingEvent from "./UpcomingEvent";
-import { Fragment } from "react";
 
 const MainContent = () => {
   return (
-    <Fragment>
+    <div>
       <Training />
       <UpcomingEvent />
-    </Fragment>
+    </div>
   );
 };
 export default MainContent;

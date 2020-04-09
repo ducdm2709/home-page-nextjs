@@ -7,15 +7,18 @@ const Navbar = () => {
     "About Us",
     " Contact Us",
     "Request Account",
+    "Sign In",
   ];
   const renderNavbar = () => {
     return listLink.map((link, index) => {
       if (link === "Sign In") {
-        <li className={`nav-item  ${styles.line} ${styles.navItem}`}>
-          <a className={`nav-link ${styles.navLink}`} href="#">
-            Sign In
-          </a>
-        </li>;
+        return (
+          <li className={`nav-item  ${styles.line} ${styles.navItem}`}>
+            <a className={`nav-link ${styles.navLink}`} href="#">
+              Sign In
+            </a>
+          </li>
+        );
       }
       return (
         <li className={`nav-item mx-3 ${styles.navItem}`} key={index}>
