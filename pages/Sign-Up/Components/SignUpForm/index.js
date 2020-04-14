@@ -78,7 +78,7 @@ const SignUpForm = () => {
             </div>
             <div className={`text-right my-3 ${styles.formBottom}`}>
               {backButton()}
-              <button className={`btn ${styles.btnSubmit}`}>
+              <button className={`btn ${styles.btn__next}`}>
                 Request Account
               </button>
             </div>
