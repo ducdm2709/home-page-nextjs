@@ -1,6 +1,6 @@
 import Layout from "../../../Components/Layout";
 import { useRouter } from "next/router";
-import { listEvent } from "../../tranning/Components/UpcomingEvent/listEventData";
+import listEvent from "./../../../pages/tranning/Components/UpcomingEvent/listEventData.json";
 import ContentEvent from "../../tranning/Components/UpcomingEvent/Components/ContentEvent";
 import FormGetInfomation from "../FormGetInfomation";
 import TitlePage from "./../../../Components/TitlePage";
