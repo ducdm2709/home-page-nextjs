@@ -1,0 +1,31 @@
+.form {
+    .signUpForm {
+        border: 1px solid #14aaf9;
+    }
+}
+.btn__next {
+    width: 150px;
+    background-color: #0b7db9;
+    color: white;
+}
+.btn__back {
+    color: #14aaf9;
+    width: 150px;
+    border: 1px solid #14aaf9;
+}
+@media screen and (max-width: 768px) {
+    .form {
+        margin: 0 !important;
+        width: 100% !important;
+        .signUpForm {
+            margin: 20px;
+        }
+        .formBottom {
+            width: 90% !important;
+            margin: auto;
+            .btnForm {
+                width: 100px !important;
+            }
+        }
+    }
+}

@@ -1,10 +1,11 @@
-import styles from "./training.module.scss";
+import styles from "./introduce-training.module.scss";
 import { Fragment } from "react";
+import TitlePage from "../../../../Components/TitlePage";
 
-const Training = () => {
+const IntroduceTraining = () => {
   return (
     <Fragment>
-      <h2 className="my-5">Training</h2>
+      <TitlePage title="Tranning" />
       <div className="row">
         <div className="col-md-3">
           <div className={styles.introduceTitle}>
@@ -27,4 +28,4 @@ const Training = () => {
     </Fragment>
   );
 };
-export default Training;
+export default IntroduceTraining;

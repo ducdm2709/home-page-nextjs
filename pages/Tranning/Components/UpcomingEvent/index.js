@@ -1,5 +1,6 @@
-import { Fragment } from "react";
 import styles from "./event.module.scss";
+import { Fragment } from "react";
+
 const listEvent = [
   {
     title: "Portland Oregon",

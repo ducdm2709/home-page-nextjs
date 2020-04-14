@@ -1,0 +1,21 @@
+.circle {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #14aaf9;
+}
+.line {
+    &::after {
+        content: "";
+        background-color: #14aaf9;
+        height: 3px;
+        width: 76%;
+        position: absolute;
+        top: 6px;
+        left: 15px;
+    }
+}
+.active {
+    background-color: #14aaf9;
+}

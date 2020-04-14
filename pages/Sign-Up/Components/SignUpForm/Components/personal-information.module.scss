@@ -1,0 +1,15 @@
+.formInput {
+    border-color: #14aaf9;
+    color: #14aaf9;
+}
+.radioInput {
+    &::before {
+        background-color: #ece7ea;
+        border: none;
+    }
+}
+@media screen and(max-width:768px) {
+    .formContent {
+        width: 90% !important;
+    }
+}
