@@ -33,4 +33,4 @@ const listEvent = [
     dateTime: "November 3, 2020",
   },
 ];
-export default listEvent;
+export { listEvent };

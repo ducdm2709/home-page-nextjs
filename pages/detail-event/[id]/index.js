@@ -1,6 +1,6 @@
 import Layout from "../../../Components/Layout";
 import { useRouter } from "next/router";
-import listEvent from "../../tranning/Components/UpcomingEvent/listEventData";
+import { listEvent } from "../../tranning/Components/UpcomingEvent/listEventData";
 import ContentEvent from "../../tranning/Components/UpcomingEvent/Components/ContentEvent";
 import FormGetInfomation from "../FormGetInfomation";
 import TitlePage from "./../../../Components/TitlePage";
@@ -9,10 +9,10 @@ import styles from "./detail-event.module.scss";
 const DetailEvent = () => {
   const router = useRouter();
   const event = listEvent[router.query.id];
-  if (event) {
-    return (
-      <Layout>
-        <TitlePage title="Get More Infomation on Trainning" />
+
+  const renderContent = () => {
+    if (event) {
+      return (
         <div className="row">
           <div className={`col-md-3 ${styles.contentEvent}`}>
             <ContentEvent event={event} />
@@ -28,8 +28,14 @@ const DetailEvent = () => {
             </div>
           </div>
         </div>
-      </Layout>
-    );
-  }
+      );
+    }
+  };
+  return (
+    <Layout>
+      <TitlePage title="Get More Infomation on Trainning" />
+      {renderContent()}
+    </Layout>
+  );
 };
 export default DetailEvent;

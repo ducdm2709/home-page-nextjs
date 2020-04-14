@@ -2,7 +2,7 @@ import styles from "./event.module.scss";
 import { Fragment } from "react";
 import Link from "next/link";
 import ContentEvent from "./Components/ContentEvent";
-import listEvent from "./listEventData";
+import { listEvent } from "./listEventData";
 
 const renderEvent = () => {
   return listEvent.map((event, index) => {
