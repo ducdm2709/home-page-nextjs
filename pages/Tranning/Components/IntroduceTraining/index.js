@@ -1,6 +1,6 @@
 import styles from "./introduce-training.module.scss";
-import { Fragment } from "react";
 import TitlePage from "../../../../Components/TitlePage";
+import { Fragment } from "react";
 
 const IntroduceTraining = () => {
   return (

@@ -1,4 +1,4 @@
-import styles from "./../personal-information.module.scss";
+import styles from "../personal-information.module.scss";
 
 const PersonalInformationStep1 = () => {
   return (

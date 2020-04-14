@@ -1,5 +1,4 @@
-import React from "react";
-import styles from "./../personal-information.module.scss";
+import styles from "../personal-information.module.scss";
 const PersonalInformationStep2 = () => {
   return (
     <form className={`w-50 mx-auto pb-4 ${styles.formContent}`}>

@@ -1,0 +1,16 @@
+.formEvent {
+    border: 1px solid #14aaf9;
+}
+.btnSubmit {
+    color: white;
+    width: 150px;
+    background-color: #14aaf9;
+}
+@media screen and (max-width: 768px) {
+    .formContent {
+        margin: 0 !important;
+    }
+    .contentEvent {
+        margin-bottom: 30px;
+    }
+}

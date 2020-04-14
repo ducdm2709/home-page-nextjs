@@ -1,4 +1,5 @@
-import React, { useState, Fragment } from "react";
+import { Fragment, useState } from "react";
+
 import styles from "./sign-up.module.scss";
 import StepBar from "./Components/StepBar";
 import PersonalInformationStep1 from "./Components/PersonalInformationStep1";
@@ -7,6 +8,7 @@ import ProgramProviderInformation from "./Components/ProgramProviderInformation"
 
 const SignUpForm = () => {
   const [step, setStep] = useState(1);
+
   const handleNextStep = () => {
     setStep(step + 1);
   };
@@ -76,7 +78,7 @@ const SignUpForm = () => {
             </div>
             <div className={`text-right my-3 ${styles.formBottom}`}>
               {backButton()}
-              <button className={`btn ${styles.btn__next} `}>
+              <button className={`btn ${styles.btnSubmit}`}>
                 Request Account
               </button>
             </div>

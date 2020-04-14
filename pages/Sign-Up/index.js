@@ -1,4 +1,4 @@
-import Layout from "./../../Components/Layout";
+import Layout from "../../Components/Layout";
 import TitlePage from "../../Components/TitlePage";
 import SignUpForm from "./Components/SignUpForm";
 
